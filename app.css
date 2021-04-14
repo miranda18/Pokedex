@@ -1,0 +1,340 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./images/pokemon-background.jpeg);
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+#pokeId{
+    background-color: #bffbbf;
+    color: #2c2828;
+    caret-color: #075a07;
+}
+
+#poke-intro {
+    text-align: center;
+    color: #000;
+}
+
+#poke-info-container{
+    position: relative;
+    margin: 0 auto 0 auto;
+    height: 600px;
+    width: 50%;
+}
+
+#poke-name-container, 
+#poke-types-container,
+#poke-img, 
+#poke-name,
+#poke-types, 
+#pokedex,
+#type-label{
+    position: absolute;
+}
+
+#poke-name-container{
+    top: 18%;
+    left: 18%;
+    width: 200px;
+    height: 150px;
+}
+
+#poke-types-container{
+    top: 28%;
+    left: 54.5%;
+    width: 156px;
+    height: 59px;
+}
+
+#pokedex{
+    background-image: url(./images/pokedex2.png);
+    background-position: 52% 70%, center;
+    background-size: 194%, cover;
+    background-repeat: no-repeat !important;
+    width: 65%;
+    height: 500px;
+    top: 9%;
+    left:17%;
+}
+
+#poke-name{
+    left: 23%;
+    top: 40%;
+    font-size: 0.58em;
+}
+
+#poke-img{
+    left: 37%;
+    top: 50%;
+    width: 37%;
+    height: auto;
+    animation: appear 2s;
+}
+
+#type-label{
+    left: 5.5%;
+    top: 5%;
+    font-size: 0.5em;
+}
+
+#poke-types{
+    left: -2%;
+    font-size: 0.6em;
+    top: 29.5%;
+    width: 203px;
+}
+
+.type-writer{
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end);
+}
+
+@keyframes appear{
+    from {
+        transform:scale(0);
+    }
+    to {
+        transform:scale(1);
+    }
+}
+
+@keyframes typing{ 
+    from { width: 0}
+    to {width: 100%}
+}
+
+
+ @media (max-width: 360px) {
+    body{
+        background-size: 103%, cover;
+    }
+
+    #pokedex{
+        background-position: 51% 51%, center;
+        background-size: 198%, cover;
+        width: 196%;
+        height: 258px;
+        top: 0%;
+        left: -47%;
+    }
+
+    #poke-info-container{
+        height: auto; 
+    }
+
+    #poke-name-container{
+        top: 56px;
+        left: -44%;
+        width: 147px;
+        height: 100px;
+    }
+
+    #poke-name{
+        top: 35%;
+        left: 21%;
+        font-size: 0.43em;
+    }
+
+    #poke-img{
+        left: 34%;
+        top: 38%;
+        width: 45%;
+    }
+
+    #poke-types-container{
+        top: 85px;
+        left: 66%;
+    }
+
+    #type-label{
+        top: 13.5%; 
+    }
+
+    #poke-types{
+        font-size: 0.5em;
+        width: 150px;
+    }
+
+    #findPokemonBtn{
+        margin-top: 3%;
+    }
+  }
+
+  @media (min-width: 361px) and (max-width: 460px) {
+   #pokedex{
+        background-position: 51% 51%, center;
+        background-size: 198%, cover;
+        width: 196%;
+        height: 316px;
+        left: -47%;
+    }
+
+    #poke-info-container{
+        height: auto; 
+    }
+
+    #poke-name-container{
+        top: 78px;
+        left: -41%;
+        width: 147px;
+        height: 100px;
+    }
+
+    #poke-name{
+        top: 35%;
+        left: 21%;
+        font-size: 0.43em;
+    }
+
+    #poke-img{
+        left: 34%;
+        top: 38%;
+        width: 45%;
+    }
+
+    #poke-types-container{
+        top: 111px;
+        left: 67%;
+    }
+
+    #type-label{
+        top: 13.5%; 
+    }
+
+    #poke-types{
+        font-size: 0.5em;
+        width: 150px;
+    }
+
+    #findPokemonBtn{
+        margin-top: 3%;
+    }
+      
+  } 
+
+  @media (min-width: 461px) and (max-width: 540px){
+
+    body{
+        height: 100%;
+    }
+
+    #poke-info-container{
+        width: 100%;
+    }
+
+    #pokedex{
+      background-position: 53% 52%, center;
+      width: 93%;
+      left: 6%;
+      top: -4%;
+    }
+
+    #poke-name-container{
+        left: 7%;
+    }
+
+    #poke-types-container{
+        left: 58.5%;
+    }
+    #type-label{
+        font-size: 0.6em; 
+    }
+  }
+
+  @media (min-width: 541px) and (max-width: 939px){
+    
+    #poke-info-container{
+        width: 100%;
+    }
+
+    #pokedex{
+      background-position: 53% 52%, center;
+      width: 93%;
+      left: 6%;
+      top: 9%;
+      height: 623px;
+    }
+
+    #poke-name-container{
+        left: 10%;
+        top: 26%;
+    }
+
+    #poke-img{
+        top: 100%; 
+        width: 51%; 
+    }
+
+    #poke-name{
+        width: 180px;
+        font-size: 0.75em;
+        top: 87%;
+    }
+
+    #poke-types-container{
+        left: 59.5%;
+        top: 48%; 
+    }
+    #type-label{
+        font-size: 0.6em; 
+    }
+  }
+
+  @media (min-width: 940px) and (max-width: 1023px) {
+    #pokedex{
+        width: 100%;
+        left: 1%;
+    }
+    #poke-name-container {
+        top: 19%;
+        left: 2%;
+    }
+    #poke-types-container {
+        top: 29.5%;
+        left: 58.5%;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1479px){
+      
+      #pokedex{
+        width: 100%;
+        height: 529px;
+        left: 5%;
+      }
+
+      #poke-name-container{
+        top: 19%;
+        left: 7%;
+      }
+
+      #poke-types-container {
+        top: 30%;
+        left: 62.5%;
+      }
+  }
+
+  @media (min-width: 1900px) {
+      #pokedex{
+          height: 637px;
+      }
+
+      #poke-name-container {
+        top: 23%;
+        left: 19%;
+    }
+
+    #poke-img {
+        left: 40%;
+        top: 50%;
+        width: 49%;
+    }
+
+    #poke-types-container {
+        top: 34%;
+    }
+  }
